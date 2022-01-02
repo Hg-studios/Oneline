@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/oneline_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/oneline_back_arrow"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/home"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/oneline_check"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/download"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/oneline_oneline_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0308"
+        android:textSize="40dp"
+        android:background="@null"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/oneline_top"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/oneline_oneline_ct"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:hint="누가언제어디서무엇을어떻게왜"
+        android:textSize="17dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/oneline_oneline_date"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
